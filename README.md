@@ -1,6 +1,6 @@
 # dio-desafio-github
 
-Repositório para o desáfio de projeto GitHub
+Repositório para o desáfio de projeto GitHub da [dio.me](https://www.dio.me/en)
 
 ## Objetivo deste repositório 😉
 
@@ -10,7 +10,7 @@ Repositório para o desáfio de projeto GitHub
 
 ## Lições Aprendidas ✔
 
-## Projetos em Andamento 👀
+### Projetos em Andamento 👀
 
 - [Portfólio: heviane.github.io](https://heviane.github.io)
 Meu portfólio profissional como dev.
