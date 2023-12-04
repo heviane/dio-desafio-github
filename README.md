@@ -10,7 +10,14 @@ Repositório para os desáfios de projetos da [DIO.me](https://web.dio.me/)
 
 ## Lições Aprendidas (Challenges) ✔
 
-- Criação de projeto no GitHub
+- Criação e compartilhamento de projetos no GitHub
+- Versionamento de código com Git
+- Lógica de Programação
+- Algoritmos
+- Javascript
+
+## Challenges
+
 - Classificador de nivel de heroi (heroLevelSorterChallenge.js)
 - Calculadora de partidas rankeadas (rankedMatchCalculatorChallenge.js)
 
