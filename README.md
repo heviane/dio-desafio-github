@@ -18,6 +18,6 @@ Repositório para os desáfios de projetos da [DIO.me](https://web.dio.me/)
 
 - [https://www.dio.me/users/byHeviane](https://www.dio.me/users/byHeviane)
 
-- [Portfólio: heviane.github.io](https://heviane.github.io)
+- [https://heviane.github.io](https://heviane.github.io)
 
 🚀 **Let's code!** 🚀
