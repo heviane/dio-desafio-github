@@ -1,6 +1,6 @@
 # dio-desafio-github
 
-Repositório para os desáfios de projetos da [DIO.me](https://web.dio.me/)
+Repositório para estudos e desáfios de projetos da [DIO.me](https://web.dio.me/)
 
 ## Objetivo deste repositório 😉
 
