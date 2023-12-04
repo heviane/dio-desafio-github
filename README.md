@@ -1,6 +1,6 @@
 # dio-desafio-github
 
-Repositório para o desáfio de projeto GitHub da [dio.me](https://www.dio.me/en)
+Repositório para os desáfios de projetos da [DIO.me](https://web.dio.me/)
 
 ## Objetivo deste repositório 😉
 
@@ -8,20 +8,19 @@ Repositório para o desáfio de projeto GitHub da [dio.me](https://www.dio.me/en
 - Compartilhar e interagir com a comunidade
 - Construir portifólio
 
-## Lições Aprendidas ✔
+## Lições Aprendidas (Challenges) ✔
 
-### Projetos em Andamento 👀
+- Criação de projeto no GitHub
+- Classificador de nivel de heroi (heroLevelSorterChallenge.js)
+- Calculadora de partidas rankeadas (rankedMatchCalculatorChallenge.js)
+
+### My Profile on DIO 👀
+
+- [https://www.dio.me/users/byHeviane](https://www.dio.me/users/byHeviane)
 
 - [Portfólio: heviane.github.io](https://heviane.github.io)
-Meu portfólio profissional como dev.
 
 - [Conteúdo sobre os cursos: heviane.github.io/site-courses](https://heviane.github.io/site-courses)
-Web Site com todos os conteúdos dos cursos realizados.
-
-- [Guia Dev: heviane.github.io/guia-dev](https://heviane.github.io/guia-dev)
-Web page com lista de links de tudo que for útil na área dev.
-
-- [Glossary: heviane.github.io/glossary-dev](https://heviane.github.io/glossary-dev)
-Web page no estilo buscador (google) sobre termos técnicos da área dev.
+Web Site com todos os conteúdos (resumos) dos cursos realizados.
 
 🚀 **Let's code!** 🚀
