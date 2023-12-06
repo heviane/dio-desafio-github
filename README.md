@@ -20,7 +20,7 @@ Repositório para estudos e desáfios de projetos da [DIO.me](https://web.dio.me
 
 - Classificador de nivel de heroi (heroLevelSorterChallenge.js)
 - Calculadora de partidas rankeadas (rankedMatchCalculatorChallenge.js)
-- Escrevendo a classe de um jogo (writingGameClasses.js)
+- Escrevendo a classe de um jogo (writingGameClassChallenge.js)
 
 ### My Profile 👀
 
