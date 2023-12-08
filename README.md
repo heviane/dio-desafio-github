@@ -7,7 +7,7 @@ O objetivo do desafio é praticar a utilização do Git e GitHub, realizar taref
 
 Lista dos desáfios realizados.
 
-[https://heviane.github.io/dio-desafio-github/](https://heviane.github.io/dio-desafio-github/)
+[https://heviane.github.io/dio-desafio-github/challenges/index.html](https://heviane.github.io/dio-desafio-github/challenges/index.html)
 
 ## Como Contribuir
 
