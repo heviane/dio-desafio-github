@@ -3,12 +3,6 @@
 Este é um repositório criado como parte do Desáfio GitHub do bootcamp da [Digital Innovation One](https://web.dio.me/).<br>
 O objetivo do desafio é praticar a utilização do Git e GitHub, realizar tarefas básicas comuns no ciclo de desenvolvimento de software, publicar conteúdo, artigos e outros desáfios relacionados aos cursos realizados. E assim compartilhar e interagir com a comunidade.
 
-## Estrutura do Repositório
-
-O repositório está organizado da seguinte forma:
-
-...Here: insert image... 
-
 ## Challenges
 
 Lista dos desáfios realizados.
