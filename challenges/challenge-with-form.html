@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+    <title>Challenge: Classificador de nivel de heroi</title>
+</head>
+<body>
+    <h1>Challenge: Classificador de nivel de heroi</h1>
+
+    <form id="heroForm">
+        <label for="heroName">Nome do Herói:</label>
+        <input type="text" id="heroName" required>
+        <br>
+        <label for="xpAmount">Quantidade de XP:</label>
+        <input type="number" id="xpAmount" required>
+
+        <button type="button" onclick="processInformation()">Processar</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        function processInformation() {
+            //----------- Input
+            let nameHero = document.getElementById("heroName").value;
+            let amountXP = parseInt(document.getElementById("xpAmount").value);
+
+            //----------- Output
+            let level = classifyLevel(amountXP);
+            let outputMessage = "O Herói de nome " + nameHero + " está no nível " + level;
+
+            //----------- Display Output
+            document.getElementById("output").innerHTML = "<p>" + outputMessage + "</p>";
+        }
+
+        //----------- Process
+        function classifyLevel(amountXP) {
+            let level;
+
+            if (amountXP <= 1000)
+                level = "Ferro";
+            else if (amountXP > 1000 && amountXP <= 2000)
+                level = "Bronze";
+            else if (amountXP > 2000 && amountXP <= 5000)
+                level = "Prata";
+            else if (amountXP > 5000 && amountXP <= 7000)
+                level = "Ouro";
+            else if (amountXP > 7000 && amountXP <= 8000)
+                level = "Platina Diamante";
+            else if (amountXP > 8000 && amountXP <= 9000)
+                level = "Ascendente";
+            else if (amountXP > 9000 && amountXP <= 10000)
+                level = "Imortal";
+            else if (amountXP > 10000)
+                level = "Radiante";
+            else
+                level = "Oops! Something went wrong.";
+
+            return level;
+        }
+    </script>
+</body>
+</html>

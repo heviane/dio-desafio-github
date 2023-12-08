@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Classificador de nivel de heroi</title>
+</head>
+<body>
+    <h1>Challenge: Classificador de nivel de heroi</h1>
+
+    <script>
+        //----------- Input
+        let nameHero = prompt("Informe o nome do Herói:");
+        let amountXP = parseInt(prompt("Informe a quantidade de XP:"));
+
+        //----------- Output
+        let level = classifyLevel(amountXP);
+        let outputMessage = "O Herói de nome " + nameHero + " está no nível " + level;
+
+        //----------- Display Output
+        document.write("<p>" + outputMessage + "</p>");
+
+        //----------- Process
+        function classifyLevel(amountXP) {
+            let level;
+
+            if (amountXP <= 1000)
+                level = "Ferro";
+            else if (amountXP > 1000 && amountXP <= 2000)
+                level = "Bronze";
+            else if (amountXP > 2000 && amountXP <= 5000)
+                level = "Prata";
+            else if (amountXP > 5000 && amountXP <= 7000)
+                level = "Ouro";
+            else if (amountXP > 7000 && amountXP <= 8000)
+                level = "Platina Diamante";
+            else if (amountXP > 8000 && amountXP <= 9000)
+                level = "Ascendente";
+            else if (amountXP > 9000 && amountXP <= 10000)
+                level = "Imortal";
+            else if (amountXP > 10000)
+                level = "Radiante";
+            else
+                level = "Oops! Something went wrong.";
+
+            return level;
+        }
+    </script>
+</body>
+</html>
+
