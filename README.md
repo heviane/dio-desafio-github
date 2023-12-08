@@ -20,6 +20,7 @@ O repositório está organizado da seguinte forma:
 ## Como Contribuir
 
 Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.<br>
+Leia o [guia de contribuições]() para mais informações.<br>
 Contribuições são sempre bem-vindas!
 
 🚀 **Let's code!** 🚀
