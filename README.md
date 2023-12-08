@@ -11,11 +11,9 @@ O repositório está organizado da seguinte forma:
 
 ## Challenges
 
-...Here: list challenges and public on GitHub Pages...
+Lista dos desáfios realizados.
 
-- Classificador de nivel de heroi
-- Calculadora de partidas rankeadas
-- Escrevendo a classe de um jogo
+[https://heviane.github.io/dio-desafio-github/](https://heviane.github.io/dio-desafio-github/)
 
 ## Como Contribuir
 
