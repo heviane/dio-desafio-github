@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="../../lib/capitalizeFirstLetter.js"></script>
+    <script>
+        class Hero {
+            // properties
+            constructor(name, age, type){
+                this.name = name
+                this.age  = age
+                this.type = capitalizeFirstLetter(type); // guerreiro, mago, monge, ninja
+            }
+
+            // methods get and set
+            getName(){
+                return this.name;
+            }
+            getAge(){
+                return this.age;
+            }
+            getType(){
+                return this.type;
+            }
+            setName(name){
+                this.name = name;
+            }
+            setAge(age){
+                this.age = age;
+            }
+            setType(type){
+                this.type = capitalizeFirstLetter(type);
+            }
+
+            // specific methods
+            attack(){
+                let attackDescription;
+                if(this.type === "Mago" || this.type === "mago")
+                    attackDescription = "magia";
+                else if(this.type === "Guerreiro" || this.type === "guerreiro")
+                    attackDescription = "espada";
+                else if(this.type === "Monge" || this.type === "monge")
+                    attackDescription = "artes marciais";
+                else if(this.type === "Ninja" || this.type === "ninja")
+                    attackDescription = "shuriken";
+                else
+                    attackDescription = ("Tipo" + this.type + ": Not Identified");
+
+                return `O tipo ${this.type} atacou usando ${attackDescription}`;
+            }
+        }
+
+        function processForm() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const type = document.getElementById('type').value;
+
+            const hero = new Hero(name, age, type);
+            const output = hero.attack();
+
+            document.getElementById('output').innerText = output;
+        }
+    </script>
+    <title>Challenge: Escrevendo classe de jogo com orientação a objetos<</title>
+</head>
+<body>
+    <form>
+        <h1>Challenge: Escrevendo classe de jogo com orientação a objetos</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required><br>
+
+        <label for="type">Type (guerreiro, mago, monge, ninja):</label>
+        <input type="text" id="type" required><br>
+
+        <button type="button" onclick="processForm()">Process</button><br>
+
+        <div id="output"></div>
+    </form>
+</body>
+</html>

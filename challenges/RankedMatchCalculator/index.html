@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #hero-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="hero-info">
+        <h1>Challenge: Calculadora de partidas rankeadas</h1>
+        <h2>Informações do Herói</h2>
+        <form id="hero-form">
+            <label for="hero-name">Nome do Herói:</label>
+            <input type="text" id="hero-name" required><br>
+
+            <label for="victories">Vitorias:</label>
+            <input type="number" id="victories" required><br>
+
+            <label for="defeats">Derrotas:</label>
+            <input type="number" id="defeats" required><br>
+
+            <button type="button" onclick="processHero()">Process Information</button>
+        </form>
+
+        <h3>Output</h3>
+        <p>Nome do Herói: <span id="output-hero-name"></span></p>
+        <p>Vitorias: <span id="output-hero-victories"></span></p>
+        <p>Derrotas: <span id="output-hero-defeats"></span></p>
+        <p>Saldo: <span id="output-hero-balance"></span></p>
+        <p>Nível: <span id="output-hero-level"></span></p>
+    </div>
+
+    <script>
+        function processHero() {
+            // Get input values
+            let nameHero = document.getElementById('hero-name').value;
+            let victories = parseInt(document.getElementById('victories').value);
+            let defeats = parseInt(document.getElementById('defeats').value);
+
+            // Calculate balance and level
+            let balance = calcBalance(victories, defeats);
+            let level = calcLevel(balance);
+
+            // Display output
+            document.getElementById('output-hero-name').innerText = nameHero;
+            document.getElementById('output-hero-victories').innerText = victories;
+            document.getElementById('output-hero-defeats').innerText = defeats;
+            document.getElementById('output-hero-balance').innerText = balance;
+            document.getElementById('output-hero-level').innerText = level;
+        }
+
+        function calcBalance(victories, defeats) {
+            return victories - defeats;
+        }
+
+        function calcLevel(balance) {
+            if (balance < 10)
+                return 'Ferro';
+            else if (balance <= 20)
+                return 'Bronze';
+            else if (balance <= 50)
+                return 'Prata';
+            else if (balance <= 80)
+                return 'Ouro';
+            else if (balance <= 90)
+                return 'Diamante';
+            else if (balance <= 100)
+                return 'Lendário';
+            else
+                return 'Imortal';
+        }
+    </script>
+</body>
+</html>
