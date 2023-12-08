@@ -1,31 +1,26 @@
-# dio-desafio-github
+# Desáfio GitHub
 
-Repositório para estudos e desáfios de projetos da [DIO.me](https://web.dio.me/)
+Este é um repositório criado como parte do Desáfio GitHub do bootcamp da [Digital Innovation One](https://web.dio.me/).<br>
+O objetivo do desafio é praticar a utilização do Git e GitHub, realizar tarefas básicas comuns no ciclo de desenvolvimento de software, publicar conteúdo, artigos e outros desáfios relacionados aos cursos realizados. E assim compartilhar e interagir com a comunidade.
 
-## Objetivo deste repositório 😉
+## Estrutura do Repositório
 
-- Criar conteúdo sobre os cursos e desáfios realizados
-- Compartilhar e interagir com a comunidade
-- Construir portifólio
+O repositório está organizado da seguinte forma:
 
-## Lições Aprendidas (Challenges) ✔
-
-- Criação e compartilhamento de projetos no GitHub
-- Versionamento de código com Git
-- Lógica de Programação
-- Algoritmos
-- Javascript
+...Here: insert image... 
 
 ## Challenges
 
-- Classificador de nivel de heroi (heroLevelSorterChallenge.js)
-- Calculadora de partidas rankeadas (rankedMatchCalculatorChallenge.js)
-- Escrevendo a classe de um jogo (writingGameClassChallenge.js)
+...Here: list challenges and public on GitHub Pages...
 
-### My Profile 👀
+- Classificador de nivel de heroi
+- Calculadora de partidas rankeadas
+- Escrevendo a classe de um jogo
 
-- [https://www.dio.me/users/byHeviane](https://www.dio.me/users/byHeviane)
+## Como Contribuir
 
-- [https://heviane.github.io](https://heviane.github.io)
+Sinta-se à vontade para abrir issues e pull requests para melhorar este projeto.<br>
+Leia o [guia de contribuições](CONTRIBUTING.md) para mais informações.<br>
+Contribuições são sempre bem-vindas!
 
 🚀 **Let's code!** 🚀
