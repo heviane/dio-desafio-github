@@ -1,5 +1,5 @@
 // Module: Object Orientation
-// Challenge: Writing a game class
+// Challenge: Writing Game Class
 
 class Hero {
 
