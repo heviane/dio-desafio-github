@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Stats</title>
+    <title>Challenge: Calculadora de partidas rankeadas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,28 +24,62 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
     </style>
 </head>
+
 <body>
     <div id="hero-info">
         <h1>Challenge: Calculadora de partidas rankeadas</h1>
         <h2>Informações do Herói</h2>
         <form id="hero-form">
             <label for="hero-name">Nome do Herói:</label>
-            <input type="text" id="hero-name" required><br>
+            <input type="text" id="hero-name" required>
 
-            <label for="victories">Vitorias:</label>
-            <input type="number" id="victories" required><br>
+            <label for="victories">Vitórias:</label>
+            <input type="number" id="victories" required>
 
             <label for="defeats">Derrotas:</label>
-            <input type="number" id="defeats" required><br>
+            <input type="number" id="defeats" required>
 
-            <button type="button" onclick="processHero()">Process Information</button>
+            <button type="button" onclick="processHero()">Processar Informações</button>
         </form>
 
         <h3>Output</h3>
         <p>Nome do Herói: <span id="output-hero-name"></span></p>
-        <p>Vitorias: <span id="output-hero-victories"></span></p>
+        <p>Vitórias: <span id="output-hero-victories"></span></p>
         <p>Derrotas: <span id="output-hero-defeats"></span></p>
         <p>Saldo: <span id="output-hero-balance"></span></p>
         <p>Nível: <span id="output-hero-level"></span></p>
@@ -91,4 +126,5 @@
         }
     </script>
 </body>
+
 </html>
